@@ -3,9 +3,6 @@
 ## 🎨 Design Reference
 
 - **Design Link:** [Figma Design](https://www.figma.com/design/uhinheFgWssbxvlI7wtf59/Intervue-Assigment--Poll-system?node-id=0-1&t=Y5)
-- **Design Preview:** *(Insert design image screenshot here — ideally from the Figma file for quick reference)*
-
-> ⚠️ Please ensure the UI in your assignment submission follows the shared Figma design without any deviations.
 
 ---
 
@@ -34,28 +31,65 @@
 
 ## 🛠️ Technology Stack
 
-- **Frontend:** React (Redux optional but preferred)
-- **Backend:** Express.js with **Socket.io** for real-time polling functionality
+- **Frontend:** React, react-bootstrap for styling
+- **Backend:** Express.js with **Socket.io** for real-time polling functionality, DataBase: MongoDB
 
 ---
 
-## ✅ Must-Have Requirements
+## Prerequisites
+Make sure you have the following installed:
+- Node.js
+- npm
+- MongoDB
 
-- [x] Functional system with all core features working
-- [x] Hosting for both frontend and backend
-- [x] Teacher can create polls and students can answer them
-- [x] Both teacher and student can view poll results
+# Local Deployment process
 
----
+## For server side 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Soumava-221B/Live_Polling_System.git
+   cd Live_Polling_System/poll-server
+   ```
 
-## 💡 Good to Have
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-- ⏱️ Configurable poll time limit by teacher
-- 🗑️ Option for teacher to remove a student
-- 🎨 Well-designed user interface
+3. To start MongoDB service locally (MacOS):
+   ```bash
+   sudo mongod --dbpath=/Users/<username>/data/db
+   ```
 
----
+4. Start the backend server:
+   ```bash
+   npm run dev
+   ```
+   
+5. The backend will be available at:
+   ```
+   http://localhost:3000
+   ```
 
-## ⭐ Bonus Features (Brownie Points)
+## For front-end side 
 
-- 💬 Chat popup for interaction between students and teachers
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Soumava-221B/Live_Polling_System.git
+   cd Live_Polling_System/poll-web
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the backend server:
+   ```bash
+   npm run dev
+   ```
+   
+5. The backend will be available at:
+   ```
+   http://localhost:5173
+   ```
