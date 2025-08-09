@@ -93,3 +93,38 @@ Make sure you have the following installed:
    ```
    http://localhost:5173
    ```
+
+## File Structure
+
+```
+Live_Polling_System/
+├── poll-server/                     
+│   ├── src/                 
+│   │    ├── config/                       
+│   │    ├── controllers/                       
+│   │    ├── models/                        
+│   │    └── app.jsx                       
+│   ├── .gitignore              
+│   ├── package-lock.json
+│   └── package.json                  
+│
+├── poll-web/                                               
+│   ├── src/
+│   │   ├── assests/               
+│   │   ├── components/                    
+│   │   ├── pages/                 
+│   │   ├── utils/                    
+│   │   ├── App.css                  
+│   │   ├── App.jsx                  
+│   │   └── main.jsx 
+│   ├── .gitignore 
+│   ├── eslint.config.js
+│   ├── index.html                                                              
+│   ├── package-lock.json
+│   ├── package.json
+│   └── vite.config.js                     
+│
+├── .gitignore                         
+└── README.md                     
+
+```
